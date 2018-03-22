@@ -2,9 +2,11 @@
   "extends": "uber-es2015",
   "rules": {
     "semi": ["error", "never"],
-    "max-len": ["error", 80]
+    "max-len": ["error", 80],
+    "consistent-return": "off"
   },
   "env": {
+    "browser": true,
     "jest": true
   }
 }
