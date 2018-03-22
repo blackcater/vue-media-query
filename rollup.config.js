@@ -6,9 +6,7 @@ import pkg from './package.json'
 
 const isPro = process.env.NODE_ENV === 'production'
 const ext = isPro ? '.min.js' : '.js'
-const proPlugins = [
-  uglify()
-]
+const proPlugins = [uglify()]
 
 export default {
   input: 'src/index.js',
@@ -38,7 +36,6 @@ export default {
     nodeResolve(),
     ...proPlugins
   ],
-  external: id => Object.keys(pkg.dependencies).some(path => (new RegExp(`^${path}`)).test(id)),
   watch: {
     include: 'src/**',
     exclude: 'node_modules/**'

@@ -2,13 +2,17 @@
 
 A media query component for vue.js
 
-
 [![CircleCI](https://circleci.com/gh/blackcater/vue-media-query/tree/master.svg?style=svg)](https://circleci.com/gh/blackcater/vue-media-query/tree/master)
-
 
 [![Coverage Status](https://coveralls.io/repos/github/blackcater/vue-media-query/badge.svg?branch=master)](https://coveralls.io/github/blackcater/vue-media-query?branch=master)
 
 <h2>Install</h2>
+
+```bash
+> yarn add vue-media-query --save
+
+> npm install vue-media-query --save
+```
 
 <h2>Usage</h2>
 

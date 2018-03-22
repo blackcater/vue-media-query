@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="./js/vue.min.js"></script>
+  <script src="./js/vue-media-query.min.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <h1>demo2</h1>
+    <media-query v-model="responsive" :query="query">
+      <h2 :style="{wordBreak: 'break-all'}">{{title}}</h2>
+    </media-query>
+  </div>
+
+  <script>
+    new Vue({
+      el: '#app',
+      data() {
+        return {
+          responsive: {},
+          query: {
+            mobile: { maxWidth: '576px' },
+          },
+        }
+      },
+      computed: {
+        title() {
+          return JSON.stringify(this.responsive)
+        },
+      },
+    })
+  </script>
+</body>
+
+</html>

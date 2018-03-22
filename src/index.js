@@ -5,7 +5,7 @@ import {isObject} from './util'
 const DEFAULT_NAME = '__default__'
 
 const MediaQuery = {
-  name: 'vue-media-query',
+  name: 'media-query',
 
   props: {
     value: {
