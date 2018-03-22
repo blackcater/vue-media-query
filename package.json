@@ -13,10 +13,9 @@
     "email": "blackcater2015@gmail.com",
     "url": "http://www.blackcater.win"
   },
-  "files": [
-    "lib"
-  ],
+  "files": ["lib"],
   "scripts": {
+    "demo": "browser-sync start --server ./examples --files '**/*.*'",
     "dev": "rollup -c rollup.config.js --environment NODE_ENV:development -w",
     "pro": "rollup -c rollup.config.js --environment NODE_ENV:production",
     "lint": "eslint --fix '{src,test}/**/*.js'",
@@ -25,7 +24,8 @@
     "test:watch": "jest -c jest.config.json --watch",
     "test:coverage": "jest -c jest.config.json --coverage",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "version":
+      "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "precommit": "lint-staged"
   },
