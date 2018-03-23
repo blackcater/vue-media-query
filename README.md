@@ -71,4 +71,4 @@ If you want to support legacy browsers (ie <= 10), please include a window.match
 **vue-media-query** © [blackcater](https://github.com/blackcater), Released under the [MIT](./LICENSE) License.<br>
 Authored and maintained by blackcater with help from contributors ([list](https://github.com/blackcater/vue-media-query/contributors)).
 
-> [www.blackcater.win](http://www.blackcater.com) · GitHub [@blackcater](https://github.com/blackcater) · Twitter [@tomtang2015](https://twitter.com/tomtang2015)
+> [www.blackcater.win](http://www.blackcater.win) · GitHub [@blackcater](https://github.com/blackcater) · Twitter [@tomtang2015](https://twitter.com/tomtang2015)
