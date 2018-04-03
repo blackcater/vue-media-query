@@ -1,6 +1,11 @@
+<p>
+    <a href="https://github.com/blackcater"><img alt="logo" width="36" height="36" src="http://oameisqha.bkt.clouddn.com/avatar.png?roundPic/radius/!50p" alt="blackcater">
+    </a>
+</p>
+
 <h1 align="center">vue-media-query</h1>
 
-A media query component for vue.js
+<p align="center">A media query component for vue.js</p>
 
 [![CircleCI](https://circleci.com/gh/blackcater/vue-media-query/tree/master.svg?style=svg)](https://circleci.com/gh/blackcater/vue-media-query/tree/master)
 
