@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="./js/vue.min.js"></script>
+  <script src="./js/vue-media-query.min.js"></script>
+  <script>
+    Vue.component('sub-component', {
+      inject: ['media'],
+
+      computed: {
+        title() {
+          return JSON.stringify(this.media)
+        },
+      },
+
+      template: `<h2>{{title}}</h2>`,
+    })
+  </script>
+</head>
+
+<body>
+<div id="app">
+  <h1>demo1</h1>
+  <media-query-provider>
+    <sub-component></sub-component>
+  </media-query-provider>
+</div>
+
+<script>
+  new Vue({
+    el: '#app',
+    data() {
+      return {}
+    },
+  })
+</script>
+</body>
+
+</html>
