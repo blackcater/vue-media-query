@@ -66,7 +66,7 @@ This project is inspired by [vue-media](https://github.com/egoist/vue-media).
 
 ```vue
 <template>
-  <media-query-provider>
+  <media-query-provider :query="query">
     <router-view></router-view>
   </media-query-provider>
 </template>
@@ -76,6 +76,15 @@ import { MediaQueryProvider } from 'vue-media-query'
 
 export default {
   components: { MediaQueryProvider }
+  
+  data() {
+    return {
+      query: {
+        landscape: { orientation: 'landscape' },
+        portrait: { orientation: 'portrait' },
+      },
+    }
+  }
 }
 </script>
 ```
