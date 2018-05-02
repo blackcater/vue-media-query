@@ -107,6 +107,9 @@ export default {
 }
 </script>
 ```
+*Notice:*
+
+Because of `<media-query-provider>` depends on `[provide/inject](https://vuejs.org/v2/api/#provide-inject)`. So the version of Vue should be `2.2.0+`.
 
 <h2>Browser support</h2>
 
