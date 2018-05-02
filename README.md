@@ -21,6 +21,8 @@
 
 <h2>Usage</h2>
 
+### `<media-query>`
+
 ```vue
 <template>
   <div id="app">
@@ -58,6 +60,44 @@ When you change the orientation of device (phone or browser). You can see the re
 The value of query can also be a [media query string](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) like (max-width: 500px), for more info please see [json2mq](https://github.com/akiran/json2mq/blob/master/README.md#usage) doc.
 
 This project is inspired by [vue-media](https://github.com/egoist/vue-media).
+
+
+### `<media-query-provider>`
+
+```vue
+<template>
+  <media-query-provider>
+    <router-view></router-view>
+  </media-query-provider>
+</template>
+
+<script>
+import { MediaQueryProvider } from 'vue-media-query'
+
+export default {
+  components: { MediaQueryProvider }
+}
+</script>
+```
+
+```vue
+<template>
+  <h2>{{title}}</h2>
+</template>
+
+<script>
+// sub component
+export default {
+  inject: ['media'],
+  
+  computed: {
+    title() {
+      return JSON.stringify(this.media)
+    }
+  }
+}
+</script>
+```
 
 <h2>Browser support</h2>
 
