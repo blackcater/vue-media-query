@@ -1,6 +1,6 @@
 {
   "name": "vue-media-query",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A media query component for vue.js",
   "homepage": "https://github.com/blackcater/vue-media-query",
   "main": "lib/index.js",
